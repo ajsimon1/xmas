@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    {% if user %}
+    <title>{{ user }}'s Xmas Wish List</title>
+    {% else %}
+    <title>Family Wish List</title>
+    {% endif %}
+  </head>
+  <body>
+    {% block content %}
+    {% endblock %}
+  </body>
+</html>
